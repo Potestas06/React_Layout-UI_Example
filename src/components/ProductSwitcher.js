@@ -22,7 +22,7 @@ const ProductSelection = () => {
 
   return (
     <div>
-      <form className="max-w-xs mx-auto mt-6 p-4 bg-white shadow-md rounded">
+      <form className="max-w-xs mx-auto mt-6 p-4 bg-white dark:bg-gray-300 shadow-md rounded">
         <p className="mb-2 font-semibold">Wähle deine Interessen:</p>
         <label className="block mb-2">
           <input
@@ -59,7 +59,7 @@ const ProductSelection = () => {
         </label>
       </form>
       {selectedProduct !== "none" && (
-        <div className="max-w-xs mx-auto mt-6 p-4 bg-white shadow-md rounded">
+        <div className="max-w-xs mx-auto mt-6 p-4 bg-white dark:bg-gray-300 shadow-md rounded">
           <p>Das ausgewählte Produkt: {selectedProduct}</p>
           <img
             src={getImageForProduct(selectedProduct)}
